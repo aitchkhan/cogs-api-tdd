@@ -1,4 +1,4 @@
-import { getBooks } from '../../src/components/books/service';
+import { getAttendance } from '../../src/components/attendance/service';
 
 describe('Get All User Service', () => {
   test('get users service should return a user list ', () => {
@@ -8,6 +8,6 @@ describe('Get All User Service', () => {
       'raylan',
       'winona',
     ];
-    expect(getBooks()).toEqual(users);
+    expect(getAttendance()).toEqual(users);
   });
 });
