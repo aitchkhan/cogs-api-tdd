@@ -5,7 +5,7 @@ import * as Router from 'koa-router';
 import * as Ctrl from '../components/attendance/ctrl';
 
 const router = new Router({
-  prefix: 'api/v1/attendance',
+  prefix: '/api/v1/attendance',
 });
 
 /**
