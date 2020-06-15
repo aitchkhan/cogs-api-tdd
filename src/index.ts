@@ -38,7 +38,7 @@ d('current environment: %s', conf.get('env'));
 d('server started at port: %d', conf.get('port'));
 
 useContainer(Container);
-// using config from ormconfig.js
+// using config from env variables from conf/
 createConnection().then(() => {
   // tslint:disabled-next-line
   console.log('db connection established');
