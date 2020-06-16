@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryGeneratedColumn  } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Attendance {
@@ -8,11 +8,14 @@ export class Attendance {
   @Column({
     length: 400,
   })
-  public name: string;
+  public userId: number;
 
   @Column()
-  public isPublished: boolean;
+  public isLate: boolean;
 
-  @Column('double')
-  public copiesSold: number;
+  @Column()
+  public isHalfDay: boolean;
+
+  @Column()
+  public checkIn: string;
 }

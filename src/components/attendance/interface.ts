@@ -1,8 +1,11 @@
-export interface  AttendanceRequestPayload {
-    userId: number,
-    checkIn: string,
+export interface AttendanceRequestPayload {
+  userId: number;
+  checkIn: string;
 }
 
 export interface AttendanceSuccessResponse {
-    success: boolean;
+  userId: number;
+  checkIn: string;
+  isLate: boolean;
+  isHalfDay: boolean;
 }

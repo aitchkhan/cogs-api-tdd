@@ -18,7 +18,7 @@ This is a fork of the infamous boilerplate [koa2-ts-boilerplate](https://github.
 
 
 
-### Test cases:
+### Use cases:
 - should throw error if user is inactive
 - should be able to check-in
 - should be marked as late when check-in time is greater than 10:00 AM
