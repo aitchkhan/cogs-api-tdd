@@ -55,7 +55,4 @@ const allowedMethods = router.allowedMethods({
   throw: true,
 });
 
-export default () => compose([
-  routes,
-  allowedMethods,
-]);
+export default () => compose([routes, allowedMethods]);
