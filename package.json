@@ -52,7 +52,8 @@
     "jest": "^26.0.1",
     "lint-staged": "^10.2.10",
     "nodemon": "^2.0.4",
-    "ts-jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "typescript": "^3.9.5"
   },
   "husky": {
@@ -63,6 +64,7 @@
   },
   "lint-staged": {
     "src/**/*.ts": [
+      "pretty-quick",
       "git add"
     ]
   },

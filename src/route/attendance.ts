@@ -5,7 +5,7 @@ import * as Router from 'koa-router';
 import * as Ctrl from '../components/attendance/ctrl';
 
 const router = new Router({
-  prefix: 'api/v1/attendance',
+  prefix: '/api/v1/attendance',
 });
 
 /**
@@ -55,7 +55,4 @@ const allowedMethods = router.allowedMethods({
   throw: true,
 });
 
-export default () => compose([
-  routes,
-  allowedMethods,
-]);
+export default () => compose([routes, allowedMethods]);
